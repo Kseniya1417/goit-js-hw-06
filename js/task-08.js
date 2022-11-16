@@ -9,7 +9,7 @@ const validateForm = (event) => {
     return alert("Please fill in all the fields!");
   }
   const loginData = { email: email.value, password: password.value };
-  console.log(`Email: ${loginData.email}, Password: ${loginData.password}`);
+  console.log(loginData);
   event.currentTarget.reset();
 };
 login.addEventListener("submit", validateForm);
